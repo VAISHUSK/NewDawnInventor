@@ -1,0 +1,82 @@
+body {
+    font-family: Arial;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 { margin-bottom: 20px; }
+
+.top { display: flex; gap: 10px; }
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background: #0078ff;
+    color: white;
+    border: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* ensure columns have equal width */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #0b74de;
+    color: #fff;
+}
+
+td img.thumb {
+    width: 70px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+.thumb {
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.modal {
+    display: none;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    margin: 100px auto;
+    border-radius: 5px;
+}
+
+/* Inputs, Textareas, Selects full width */
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%;           /* full width */
+    box-sizing: border-box; /* include padding in width */
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    display: block;
+}
